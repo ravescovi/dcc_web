@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — DeChellis Capital</title>
   <meta name="description" content="Get in touch with DeChellis Capital. 916 Turtle Cove Lane, Suite 200, Vero Beach, FL. (772) 410-8382." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact — DeChellis Capital" />
+  <meta property="og:description" content="Get in touch with DeChellis Capital. 916 Turtle Cove Lane, Suite 200, Vero Beach, FL. (772) 410-8382." />
+  <meta property="og:url" content="https://ravescovi.github.io/dcc_web/contact.html" />
+  <meta property="og:image" content="https://ravescovi.github.io/dcc_web/assets/logo/favicon-192.png" />
+  <meta property="og:site_name" content="DeChellis Capital" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Contact — DeChellis Capital" />
+  <meta name="twitter:description" content="Get in touch with DeChellis Capital. 916 Turtle Cove Lane, Suite 200, Vero Beach, FL. (772) 410-8382." />
+  <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/svg+xml" href="assets/logo/dechellis-capital-mark.svg" />
-  <link rel="icon" href="assets/images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/logo/favicon-192.png" />
+  <link rel="apple-touch-icon" href="assets/logo/favicon-180.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script>document.documentElement.className = document.documentElement.className.replace('no-js','js');</script>
 </head>
@@ -18,7 +30,11 @@
     <div class="container">
       <nav class="main-nav" aria-label="Main">
         <a class="main-nav__logo" href="index.html" aria-label="DeChellis Capital home">
-          <img src="assets/logo/dechellis-capital-horizontal.svg" alt="DeChellis Capital" />
+          <img src="assets/logo/dechellis-capital-mark.svg" alt="" aria-hidden="true" />
+          <span class="brand-lockup">
+            <span class="brand-lockup__name">DeChellis</span>
+            <span class="brand-lockup__sub">Capital</span>
+          </span>
         </a>
         <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
           <span></span><span></span><span></span>
@@ -43,58 +59,70 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="contact-section">
       <div class="container">
-        <div class="contact-grid reveal">
-          <div class="contact-grid__item reveal-child">
-            <h3>Address</h3>
-            <p>916 Turtle Cove Lane — Suite 200,<br />Vero Beach, Florida 32963</p>
-          </div>
-          <div class="contact-grid__item reveal-child">
-            <h3>Hours</h3>
-            <p>Mon – Fri: 9:00 am – 5:00 pm<br />Sat – Sun: Appointment Only</p>
-          </div>
-          <div class="contact-grid__item reveal-child">
-            <h3>Phone</h3>
-            <p><a href="tel:+17724108382">(772) 410-8382</a></p>
-          </div>
-          <div class="contact-grid__item reveal-child">
-            <h3>Email</h3>
-            <p><a href="mailto:contact@dechelliscapital.com">contact@dechelliscapital.com</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <div class="contact-layout">
+          <!-- Left column: details + map -->
+          <div class="contact-info">
+            <dl class="contact-info__list">
+              <div>
+                <dt>Address</dt>
+                <dd>916 Turtle Cove Lane &mdash; Suite 200<br />Vero Beach, Florida 32963</dd>
+              </div>
+              <div>
+                <dt>Hours</dt>
+                <dd>Mon &ndash; Fri: 9:00 am &ndash; 5:00 pm<br />Sat &ndash; Sun: by appointment</dd>
+              </div>
+              <div>
+                <dt>Phone</dt>
+                <dd><a href="tel:+17724108382">(772) 410-8382</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:contact@dechelliscapital.com">contact@dechelliscapital.com</a></dd>
+              </div>
+            </dl>
 
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section__title reveal">
-          <span class="eyebrow reveal-child">Write us</span>
-          <h2 class="reveal-child">Send us a message.</h2>
-          <p class="reveal-child">We'll get back to you as soon as possible.</p>
+            <div class="contact-map">
+              <iframe
+                title="Map of 916 Turtle Cove Lane, Vero Beach, FL"
+                src="https://www.google.com/maps?q=916+Turtle+Cove+Lane,+Vero+Beach,+FL+32963&z=15&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- Right column: form -->
+          <div class="contact-form-wrap">
+            <h2 class="contact-form-wrap__title">Send us a message</h2>
+            <p class="contact-form-wrap__lede">We&rsquo;ll get back to you as soon as possible.</p>
+            <form class="contact-form" action="mailto:contact@dechelliscapital.com" method="post" enctype="text/plain" novalidate>
+              <div class="contact-form__row">
+                <div>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required autocomplete="name" />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required autocomplete="email" />
+                </div>
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" />
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <div class="contact-form__actions">
+                <button type="submit" class="btn">Send Message</button>
+              </div>
+              <div class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
         </div>
-        <form class="contact-form reveal" action="mailto:contact@dechelliscapital.com" method="post" enctype="text/plain" novalidate>
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required autocomplete="name" />
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required autocomplete="email" />
-          </div>
-          <div>
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel" />
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <div>
-            <button type="submit" class="btn">Send Message</button>
-          </div>
-          <div class="form-status" role="status" aria-live="polite"></div>
-        </form>
       </div>
     </section>
   </main>
@@ -103,7 +131,13 @@
     <div class="container">
       <div class="site-footer__grid">
         <div class="site-footer__brand">
-          <img src="assets/logo/dechellis-capital-horizontal-dark.svg" alt="DeChellis Capital" />
+          <div class="brand-footer">
+            <img src="assets/logo/dechellis-capital-mark.svg" alt="" aria-hidden="true" />
+            <span class="brand-lockup">
+              <span class="brand-lockup__name">DeChellis</span>
+              <span class="brand-lockup__sub">Capital</span>
+            </span>
+          </div>
           <p>As professional landlords and property managers, we're committed to bringing you the best rental experience possible.</p>
         </div>
         <div>
