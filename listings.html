@@ -28,7 +28,7 @@
 <body>
   <site-header data-current="listings"></site-header>
 
-  <main>
+  <main id="main" tabindex="-1">
     <section class="hero hero--compact">
       <div class="container">
         <div class="hero__inner">
@@ -51,7 +51,11 @@
           data-width="100%"
           data-height="70vh"
           data-background="#ffffff"
-        ></div>
+        >
+          <p class="listings-empty">
+            No units currently available. Check back soon, or <a href="contact.html">contact us</a> to be notified.
+          </p>
+        </div>
         <script src="https://app.doorloop.com/packages/listing-sdk.min.js" defer async></script>
       </div>
     </section>

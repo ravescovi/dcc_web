@@ -31,6 +31,7 @@
 
       this.appendChild(
         fragment(`
+        <a class="skip-link" href="#main">Skip to content</a>
         <header class="site-header">
           <div class="container">
             <nav class="main-nav" aria-label="Main">
@@ -56,6 +57,7 @@
       if (toggle && menu) {
         toggle.addEventListener("click", () => {
           const open = menu.classList.toggle("is-open");
+          toggle.classList.toggle("is-open", open);
           toggle.setAttribute("aria-expanded", String(open));
         });
       }
