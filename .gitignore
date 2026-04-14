@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Node (in case anyone runs npm later)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Local
+*.local
+.env
+.env.*
+
+# Windows WSL metadata
+*:Zone.Identifier
+source/

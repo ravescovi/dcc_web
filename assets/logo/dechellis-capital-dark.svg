@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  DeChellis Capital - stacked lockup (dark variant, for placement on dark / navy backgrounds).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img"
+     aria-labelledby="dc-logo-title-d dc-logo-desc-d">
+  <title id="dc-logo-title-d">DeChellis Capital</title>
+  <desc id="dc-logo-desc-d">DeChellis Capital wordmark with twin-pennant emblem (dark variant).</desc>
+
+  <defs>
+    <linearGradient id="dc-mark-dark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#e8ecf5"/>
+      <stop offset="100%" stop-color="#c4ccdf"/>
+    </linearGradient>
+    <linearGradient id="dc-mark-sheen-d" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="dc-accent-d" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#F86F4C" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#F86F4C"/>
+      <stop offset="100%" stop-color="#F86F4C" stop-opacity="0"/>
+    </linearGradient>
+
+    <path id="dcd-left"
+          d="M 27 27 L 56 34 L 56 61 L 88 70 L 88 41 L 117 49 L 117 209 L 27 120 Z"/>
+    <path id="dcd-right"
+          d="M 231 27 L 202 34 L 202 61 L 170 70 L 170 41 L 142 49 L 142 209 L 231 120 Z"/>
+  </defs>
+
+  <g transform="translate(242.2 60) scale(1.2)">
+    <use href="#dcd-left"  fill="url(#dc-mark-dark)"/>
+    <use href="#dcd-right" fill="url(#dc-mark-dark)"/>
+    <use href="#dcd-left"  fill="url(#dc-mark-sheen-d)"/>
+    <use href="#dcd-right" fill="url(#dc-mark-sheen-d)"/>
+  </g>
+
+  <g fill="#ffffff" font-family="'Montserrat', 'Jost', system-ui, sans-serif">
+    <text x="400" y="440" text-anchor="middle"
+          font-size="82" font-weight="300" letter-spacing="3">DeChellis</text>
+    <text x="400" y="490" text-anchor="middle"
+          font-size="24" font-weight="400" letter-spacing="18">CAPITAL</text>
+  </g>
+
+  <rect x="340" y="515" width="120" height="2" fill="url(#dc-accent-d)"/>
+</svg>

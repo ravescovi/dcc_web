@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  DeChellis Capital - stacked lockup (light variant, for placement on white / light backgrounds).
+  Mark geometry is from logo_vector.svg. Wordmark rendered as live SVG <text>;
+  consumers should load Playfair Display + Cormorant Garamond via the page's font stack.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img"
+     aria-labelledby="dc-logo-title dc-logo-desc">
+  <title id="dc-logo-title">DeChellis Capital</title>
+  <desc id="dc-logo-desc">DeChellis Capital wordmark with twin-pennant emblem.</desc>
+
+  <defs>
+    <linearGradient id="dc-mark-light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#2f3e83"/>
+      <stop offset="55%" stop-color="#24356d"/>
+      <stop offset="100%" stop-color="#182c4c"/>
+    </linearGradient>
+    <linearGradient id="dc-mark-sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="dc-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#F86F4C" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#F86F4C"/>
+      <stop offset="100%" stop-color="#F86F4C" stop-opacity="0"/>
+    </linearGradient>
+
+    <path id="dc-left"
+          d="M 27 27 L 56 34 L 56 61 L 88 70 L 88 41 L 117 49 L 117 209 L 27 120 Z"/>
+    <path id="dc-right"
+          d="M 231 27 L 202 34 L 202 61 L 170 70 L 170 41 L 142 49 L 142 209 L 231 120 Z"/>
+  </defs>
+
+  <!-- Mark: original viewBox is 263x230, centered horizontally at x=400; scale 1.2 -->
+  <g transform="translate(242.2 60) scale(1.2)">
+    <use href="#dc-left"  fill="url(#dc-mark-light)"/>
+    <use href="#dc-right" fill="url(#dc-mark-light)"/>
+    <use href="#dc-left"  fill="url(#dc-mark-sheen)"/>
+    <use href="#dc-right" fill="url(#dc-mark-sheen)"/>
+  </g>
+
+  <!-- Wordmark (Gotham-style geometric sans — Montserrat Light, increased tracking) -->
+  <g fill="#182c4c" font-family="'Montserrat', 'Jost', system-ui, sans-serif">
+    <text x="400" y="440" text-anchor="middle"
+          font-size="82" font-weight="300" letter-spacing="3">DeChellis</text>
+    <text x="400" y="490" text-anchor="middle"
+          font-size="24" font-weight="400" letter-spacing="18">CAPITAL</text>
+  </g>
+
+  <rect x="340" y="515" width="120" height="2" fill="url(#dc-accent)"/>
+</svg>

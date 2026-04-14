@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  DeChellis Capital - mark only (light variant, on transparent / light backgrounds).
+  Base geometry from logo_vector.svg (263 x 230).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 263 230" role="img"
+     aria-label="DeChellis Capital">
+  <defs>
+    <linearGradient id="m-light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#2f3e83"/>
+      <stop offset="55%" stop-color="#24356d"/>
+      <stop offset="100%" stop-color="#182c4c"/>
+    </linearGradient>
+    <linearGradient id="m-sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <path id="dc-mark-left"
+          d="M 27 27 L 56 34 L 56 61 L 88 70 L 88 41 L 117 49 L 117 209 L 27 120 Z"/>
+    <path id="dc-mark-right"
+          d="M 231 27 L 202 34 L 202 61 L 170 70 L 170 41 L 142 49 L 142 209 L 231 120 Z"/>
+  </defs>
+
+  <use href="#dc-mark-left"  fill="url(#m-light)"/>
+  <use href="#dc-mark-right" fill="url(#m-light)"/>
+  <use href="#dc-mark-left"  fill="url(#m-sheen)"/>
+  <use href="#dc-mark-right" fill="url(#m-sheen)"/>
+</svg>

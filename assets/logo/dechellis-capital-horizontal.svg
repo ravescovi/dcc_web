@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  DeChellis Capital - horizontal lockup (light variant, for page headers).
+  Mark on the left (compact), wordmark on the right (large, readable at header sizes).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 120" role="img"
+     aria-labelledby="dc-h-title">
+  <title id="dc-h-title">DeChellis Capital</title>
+
+  <defs>
+    <linearGradient id="hl-mark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#2f3e83"/>
+      <stop offset="55%" stop-color="#24356d"/>
+      <stop offset="100%" stop-color="#182c4c"/>
+    </linearGradient>
+    <linearGradient id="hl-sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <path id="hl-left"
+          d="M 27 27 L 56 34 L 56 61 L 88 70 L 88 41 L 117 49 L 117 209 L 27 120 Z"/>
+    <path id="hl-right"
+          d="M 231 27 L 202 34 L 202 61 L 170 70 L 170 41 L 142 49 L 142 209 L 231 120 Z"/>
+  </defs>
+
+  <!-- Mark: 263 x 230 source, scaled 0.43 -> ~113 x 99, aligned to the wordmark baseline. -->
+  <g transform="translate(0 10) scale(0.43)">
+    <use href="#hl-left"  fill="url(#hl-mark)"/>
+    <use href="#hl-right" fill="url(#hl-mark)"/>
+    <use href="#hl-left"  fill="url(#hl-sheen)"/>
+    <use href="#hl-right" fill="url(#hl-sheen)"/>
+  </g>
+
+  <!-- Wordmark: Gotham-style geometric sans, light weight, increased tracking. -->
+  <g fill="#182c4c" font-family="'Montserrat', 'Jost', system-ui, sans-serif">
+    <text x="130" y="66" font-size="50" font-weight="300" letter-spacing="1.5">DeChellis</text>
+    <text x="132" y="96" font-size="15" font-weight="400" letter-spacing="9">CAPITAL</text>
+  </g>
+</svg>
